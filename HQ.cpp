@@ -1996,6 +1996,8 @@ void HQ::C2_3_3_Menu(unsigned int i)
 {
 	int c2_3_3_opt, c2_3_3_1opt;
 	string last_stop, rem_stop, ch_stop;
+	vector<string> stops;
+	vector<int> timings;
 	bool go_back = false;
 
 	while (!go_back)
@@ -2039,8 +2041,13 @@ void HQ::C2_3_3_Menu(unsigned int i)
 				cout << "Invalid Input. Please try again.\n";
 				cin >> c2_3_3_1opt;
 			}
+			
+			Add_Stop(stops, timings, c2_3_3_1opt, i);
 
-			Add_Stop(vl[i].getBusStops(), vl[i].getTimings(), c2_3_3_1opt, i);
+			stops = vl[i].getBusStops();
+			timings = vl[i].getTimings();
+			vl[i].SetStops(stops);
+			vl[i].SetSchedule(timings);
 			break;
 
 		case 2:
@@ -2070,6 +2077,7 @@ void HQ::Change_Route()
 	unsigned int i = 0, i2 = 0;
 	string stop_1;
 	bool c2_3_end = false;
+	vector<int> timings;
 
 	cout << endl << "Write the id number of the route you want to change: ";
 	cin >> id_reg;
@@ -2156,7 +2164,11 @@ void HQ::Change_Route()
 					<< "You want to change the value of x. Please write the name of stop_1: ";
 				cin.ignore(1000, '\n');
 				getline(cin, stop_1);
-				Change_Schedule(vl[i].getBusStops(), vl[i].getTimings(), stop_1, i);
+
+				timings = vl[i].getTimings();
+
+				Change_Schedule(vl[i].getBusStops(), timings, stop_1, i);
+				vl.at(i).SetSchedule(timings);
 				break;
 
 			case 5:
