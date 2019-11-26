@@ -1,4 +1,4 @@
-# Bus Company
+# SEMPRE A ROLAR
 This is a console project developed during my first year in Informatics and Computing Engineering at FEUP, more specifically in the 
 Programming course. 
 It is supposed to allow the management of a bus company, having in mind individual routes, buses, drivers and their schedules.
