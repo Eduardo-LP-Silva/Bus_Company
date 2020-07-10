@@ -6,17 +6,13 @@ It is supposed to allow the management of a bus company, having in mind individu
 ## Overview
 
 To use the application, the user first needs to specify the correct files (default lines file is "Linhas.txt" and drivers file
-"Condutores.txt"). If the these are valid, the following main menu will appear:
-
-![screenshot_1](https://user-images.githubusercontent.com/32617691/41614275-f64a202e-73ef-11e8-9f39-154854b13945.png)
+"Condutores.txt"). If the these are valid, the following main menu will appear.
 
 This is the main point of access to all the functionalities of the program. From here on out we will take a look into each individual option in this and subsequent menus:
 
 ### 1. Driver Management
 
 This is where all the aspects related to the drivers are handled.
-
-![screenshot_2](https://user-images.githubusercontent.com/32617691/41614688-064ec2c6-73f1-11e8-9d65-ef5708c6f71e.png)
 
 1. Add a new driver
 
@@ -34,7 +30,6 @@ Allows for the customization of each main parameter regarding a specific driver 
 
 If the user chooses this option, he is presented with a list of all drivers whith available shifts alongside their available schedule, prompting him to choose one of them. 
 
-
 ![screenshot_3](https://user-images.githubusercontent.com/32617691/41615243-a2018b58-73f2-11e8-865f-2d72699520d6.png)
 
 After that, it is displayed a list with all the bus lines that aren't full yet as well as the respective schedules, prompting the user to choose one.
@@ -51,8 +46,6 @@ Removes a shift from a specific driver (identified by its ID), indicated by the 
 
 Englobes the options regarding the different bus routes/lines.
 
-![screenshot_5](https://user-images.githubusercontent.com/32617691/41615677-ce2b04e2-73f3-11e8-8194-52181ea268a2.png)
-
 1. Add a new route
 
 Used to add a new route to the system, given its ID, frequency and the name of at least two stops and the average time it takes to travel from one to another.
@@ -67,17 +60,11 @@ Here the user can customize all the main parameters regarding route (identified 
 
 ### 3. Information
 
-![screenshot_6](https://user-images.githubusercontent.com/32617691/41616049-d3584b36-73f4-11e8-9fce-dc4c9b35bf94.png)
-
 Here the user can see various types of data regarding both the routes and drivers.
 
 1. Schedules and routes
 
-This sub menu contains several other options:
-
-![screenshot_7](https://user-images.githubusercontent.com/32617691/41616319-9b3cca96-73f5-11e8-9503-28d3fc137a6e.png)
-
-The first one shows the user a list of all the routes and respective schedules that include a specified stop.
+This sub menu contains several other options. The first one shows the user a list of all the routes and respective schedules that include a specified stop.
 
 ![screenshot_8](https://user-images.githubusercontent.com/32617691/41616436-ed777720-73f5-11e8-8065-78756e45347b.png)
 
